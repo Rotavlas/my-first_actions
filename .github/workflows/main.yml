@@ -40,4 +40,9 @@ jobs:
 
 
       - name: Display variable
-        run: echo "Value of MY_VARIABLE:${{ env.MY_VARIABLE }}"
+        run: echo "Valeur de MY_VARIABLE:${{ env.MY_VARIABLE }}"
+
+      - name: Display secret
+        run: echo "Valeur de MY_SECRET:***"
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}
