@@ -11,5 +11,8 @@
     "url": "my-first_actions"
   },
   "author": "me",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
 }
