@@ -60,6 +60,16 @@ jobs:
         env:
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
+      - name: Eslint DL
+        run : npm install --save-dev eslint
+          
+      - name: Action ESLint
+  # You may pin to the exact commit or the version.
+  # uses: sibiraj-s/action-eslint@bcf41bb9abce43cdbad51ab9b3da2eddaa17eab3
+        uses: sibiraj-s/action-eslint@v3.0.1
+
+          
+            
 
   second-job:
     runs-on: ubuntu-latest
