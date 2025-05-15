@@ -6,6 +6,6 @@
     "jest": "^29.7.0"
   },
   "devDependencies": {
-    "codecov": "^3.8.3"
+     "coveralls": "^3.1.1"
   }
 }
