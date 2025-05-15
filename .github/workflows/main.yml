@@ -47,7 +47,7 @@ jobs:
       - name: Generate coverage report
         run: |
           npm install --save-dev coveralls jest
-          npm test -- --coveralls
+       
 
       - name: Run tests with coverage
         run: npm test -- --coverage
