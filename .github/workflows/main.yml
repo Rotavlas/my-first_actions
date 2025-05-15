@@ -41,16 +41,16 @@ jobs:
       - name: Display hello.txt content
         run: cat hello.txt
 
+      - name: Generate coverage report
+        run: |
+          npm install --save-dev coveralls jest
+          npm test -- --coveralls
+
       - name: Install dependencies
         run: npm install
 
       - name: Run tests with coverage
         run: npm test -- --coverage
-
-      - name: Generate coverage report
-        run: |
-          npm install --save-dev coveralls jest
-          npm test -- --coveralls
 
       - name: Run tests
         run: npm test
